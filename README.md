@@ -10,8 +10,6 @@ Existem dois principais tipos de web services:
 
 Os web services são muito úteis para **integrar sistemas diferentes**, permitindo que compartilhem **dados** e **funcionalidades** de maneira eficiente. Por exemplo, um serviço de correios pode oferecer um web service que permite a consulta de endereços a partir de um **CEP**, facilitando a integração com outras aplicações.
 
-
-
 **O que é uma API?**
 
 Uma **API (Application Programming Interface)** é um conjunto de definições e protocolos que permite a comunicação entre diferentes sistemas de software. 
@@ -48,7 +46,6 @@ No entanto, com a conteinerização, você pode criar um único pacote de softwa
 A tecnologia de **conteinerização** do Docker permite empacotar uma aplicação com todas as suas **dependências** em um único **contêiner**, garantindo que ela funcione de maneira **consistente** em qualquer **ambiente**.
 - [Saiba mais na RedHat](https://www.redhat.com/pt-br/topics/containers/what-is-docker)
 
-
 **O que significa uma API REST?**
 
 Uma **API REST** (Representational State Transfer) é um tipo de interface de programação de aplicativos que segue princípios específicos para facilitar a comunicação entre sistemas através da **web**. Aqui estão alguns pontos principais sobre APIs REST:
@@ -61,3 +58,53 @@ Uma **API REST** (Representational State Transfer) é um tipo de interface de pr
 Essas características tornam as APIs REST uma escolha popular para a **integração de sistemas** e desenvolvimento de **aplicações web**.
 - [Saiba mais na IBM](https://www.ibm.com/br-pt/topics/rest-apis) 
 - [Saiba mais na RedHat](https://www.redhat.com/pt-br/topics/api/what-is-a-rest-api)
+
+**Qual a diferença entre um web service, uma API e o microsserviço?**
+
+## Web Service
+
+Um **web service** é um tipo de **API** que opera através da **web**, permitindo a comunicação entre diferentes sistemas pela internet. Ele utiliza protocolos padrão como **SOAP** (Simple Object Access Protocol) ou **REST** (Representational State Transfer) para enviar e receber dados. 
+Web services são projetados para serem **interoperáveis** entre diferentes plataformas e linguagens de programação.
+
+## API (Application Programming Interface)
+
+Uma **API** é um conjunto de definições e protocolos que permite que diferentes softwares se comuniquem entre si. As APIs podem ser usadas para acessar funcionalidades ou dados de um serviço, aplicativo ou sistema operacional. 
+Elas não precisam necessariamente operar pela web; podem ser **locais** ou **remotas**. 
+As **APIs RESTful** são um tipo comum de API web, mas existem muitas outras formas, como APIs de bibliotecas ou de sistemas operacionais.
+
+## Microsserviço
+
+Um **microsserviço** é uma abordagem arquitetural onde uma aplicação é dividida em pequenos serviços independentes, cada um executando uma função específica. 
+Esses serviços são desenvolvidos, implantados e escalados de forma independente, o que facilita a manutenção e a escalabilidade do sistema como um todo. 
+Microsserviços geralmente se comunicam entre si através de **APIs**, permitindo que cada serviço seja atualizado ou substituído sem afetar os outros.
+
+## Resumo das Diferenças
+
+- **Web Service**: Um tipo de API que opera pela web usando protocolos como SOAP ou REST.
+- **API**: Um conjunto de definições e protocolos para comunicação entre softwares, que pode ou não operar pela web.
+- **Microsserviço**: Uma abordagem arquitetural que divide uma aplicação em pequenos serviços independentes, que se comunicam via APIs.
+- [Saiba mais na AWS](https://aws.amazon.com/pt/compare/the-difference-between-microservices-and-apis/)
+
+**Qual a diferença entre uma API REST e uma API RESTful?**
+
+# Diferença entre API REST e API RESTful
+
+Há uma diferença sutil entre os termos **API REST** e **API RESTful**, embora muitas vezes sejam usados de forma intercambiável.
+
+## API REST
+
+Uma **API REST** é uma interface de programação de aplicativos que segue os princípios da arquitetura **REST** (Representational State Transfer). Ela utiliza métodos HTTP padrão (como **GET**, **POST**, **PUT**, **DELETE**) para realizar operações sobre os recursos, que são identificados por **URLs**. 
+A comunicação geralmente é feita usando formatos como **JSON** ou **XML**.
+
+## API RESTful
+
+O termo **API RESTful** refere-se a uma API que não apenas segue os princípios da arquitetura **REST**, mas também adere estritamente às suas restrições e melhores práticas. 
+Em outras palavras, uma API RESTful é uma implementação de uma API REST que é fiel aos princípios REST, como a separação entre cliente e servidor, a ausência de estado (**stateless**), a capacidade de **cache**, a interface uniforme, entre outros.
+
+## Resumo das Diferenças
+
+- **API REST**: Qualquer API que segue os princípios da arquitetura REST.
+- **API RESTful**: Uma API que implementa os princípios REST de forma rigorosa e completa.
+
+Em resumo, todas as APIs RESTful são APIs REST, mas nem todas as APIs REST são necessariamente RESTful, pois podem não seguir todas as restrições e melhores práticas da arquitetura REST.
+- [Saiba mais na AWS](https://aws.amazon.com/pt/what-is/restful-api/)

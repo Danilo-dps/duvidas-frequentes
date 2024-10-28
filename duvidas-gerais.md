@@ -85,9 +85,7 @@ Microsserviços geralmente se comunicam entre si através de **APIs**, permitind
 - **Microsserviço**: Uma abordagem arquitetural que divide uma aplicação em pequenos serviços independentes, que se comunicam via APIs.
 - [Saiba mais na AWS](https://aws.amazon.com/pt/compare/the-difference-between-microservices-and-apis/)
 
-**Qual a diferença entre uma API REST e uma API RESTful?**
-
-# Diferença entre API REST e API RESTful
+# Qual a diferença entre uma API REST e uma API RESTful?
 
 Há uma diferença sutil entre os termos **API REST** e **API RESTful**, embora muitas vezes sejam usados de forma intercambiável.
 

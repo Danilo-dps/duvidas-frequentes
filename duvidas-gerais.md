@@ -108,3 +108,11 @@ Em outras palavras, uma API RESTful é uma implementação de uma API REST que �
 
 Em resumo, todas as APIs RESTful são APIs REST, mas nem todas as APIs REST são necessariamente RESTful, pois podem não seguir todas as restrições e melhores práticas da arquitetura REST.
 - [Saiba mais na AWS](https://aws.amazon.com/pt/what-is/restful-api/)
+
+# O que é mockar um código?
+
+- Significa disponibilizar uma estrutura para testes, a fim de construir algo rápido para a aplicação funcionar. Imagine na construção civil, onde são usados suportes temporários para segurar uma estrutura até o cimento secar.
+
+- Quando você mocka uma parte do código, está essencialmente substituindo-a por uma versão falsa ou simulada. Isso permite que você se concentre em testar uma parte específica do sistema sem depender da funcionalidade da parte mockada. É como usar suportes temporários na construção civil para segurar a estrutura enquanto o cimento seca. Você está isolando a área que deseja testar para garantir que funciona corretamente, independentemente das outras partes do sistema que ainda não estão prontas ou que são mais complexas.
+
+- Se você está testando um serviço que depende de uma chamada de API externa, você pode mockar a chamada de API para simular diferentes respostas e ver como o serviço lida com essas situações. Assim, você não precisa esperar que a API esteja disponível ou funcionando perfeitamente.

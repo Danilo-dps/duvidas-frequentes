@@ -115,3 +115,33 @@ Em resumo, todas as APIs RESTful são APIs REST, mas nem todas as APIs REST são
 
 - Se você está testando um serviço que depende de uma chamada de API externa, você pode mockar a chamada de API para simular diferentes respostas e ver como o serviço lida com essas situações. Assim, você não precisa esperar que a API esteja disponível ou funcionando perfeitamente.
 - [Saiba mais em DevMedia](https://www.devmedia.com.br/mocks-introducao-a-automatizacao-de-testes-com-mock-object/30641)
+
+# Mapeamento e Monitoramento de Objetos
+
+## Mapeamento de Objetos
+**Mapeamento de Objetos** é o processo de converter ou "mapear" dados entre diferentes representações de objetos. Esse mapeamento é crucial para transferir dados entre diferentes camadas de uma aplicação, como do back-end para o front-end, ou entre diferentes sistemas.
+
+### Exemplos de Mapeamento:
+- **DTO para Entidade**: Converter um Data Transfer Object (DTO) em uma entidade de banco de dados.
+- **Entidade para DTO**: Converter uma entidade de banco de dados em um DTO para enviar como resposta de uma API.
+- **Entidades Aninhadas**: Lidar com objetos complexos que possuem outros objetos aninhados.
+
+### Ferramentas de Mapeamento:
+- **Dozer**: Permite mapear e transformar objetos de forma automática e personalizada.
+- **ModelMapper**: Outra ferramenta popular para mapeamento de objetos.
+- **MapStruct**: Usado para gerar código de mapeamento em tempo de compilação.
+
+## Monitoramento de Objetos
+**Monitoramento de Objetos** refere-se ao rastreamento do estado e comportamento dos objetos durante a execução de uma aplicação. Isso pode incluir a análise de performance, detecção de erros e verificação de integridade dos dados.
+
+### Ferramentas de Monitoramento:
+- **JMX (Java Management Extensions)**: Permite monitorar e gerenciar recursos de Java.
+- **Prometheus**: Ferramenta de monitoramento de sistemas open-source que pode rastrear a performance e saúde de uma aplicação.
+- **Grafana**: Usada em conjunto com Prometheus para visualizar dados de monitoramento.
+
+Essas práticas são essenciais para garantir que sua aplicação funcione de maneira eficiente e confiável, desde a correta transferência de dados até a manutenção da performance.
+
+# O que é Bind?
+
+- No contexto de mapeamento de objetos, bind refere-se ao processo de associar (ou "ligar") propriedades de um objeto a outro. Isso é essencial quando você quer transformar dados de um tipo de objeto para outro, garantindo que as informações sejam corretamente transferidas e mantidas entre diferentes camadas ou componentes de um sistema.
+
